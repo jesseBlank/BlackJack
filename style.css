@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+/* Main */
+#background {
+    padding-top: 50px;
+    background-image: url(casinoCarpet2.jpg);
+}
+
+/* Rules */
+#rules {
+    background-color: goldenrod;
+    color: maroon;
+    border: solid black;
+    position: absolute;
+    left: 21%;
+    top: 30%;
+    padding: 10px 40px;
+}
+
+.main {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#rules h1, h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.main li {
+    list-style-type: none;
+}
+
+.btn2 {
+    width: 125px;
+    height: 50px;
+    font-size: medium;
+    background-color: maroon;
+    color: goldenrod;
+    border-radius: 20%;
+    border: 2px solid black;
+    margin: 10px 40%;
+}
+
+/* Top */
+#top {
+    display: flex;
+    margin-left: 18%;
+}
+
+/* Scoreboard */
+.scoreboard {
+    background-color: black;
+    color: goldenrod;
+    width: 100px;
+}
+
+.scoreboard h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.scoreboard li {
+    list-style-type: none;
+}
+
+/* Top Banner */
+.top-banner {
+    display: flex;
+    gap: 50px;
+    position: sticky;
+    bottom: 50px;
+    align-items: center;
+    padding: 20px 30px;
+    width: 750px;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 50%;
+}
+
+.top-banner h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn1 {
+    width: 125px;
+    height: 50px;
+    font-size: medium;
+    background-color: goldenrod;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+.btn {
+    width: 125px;
+    height: 50px;
+    font-size: x-large;
+    background-color: goldenrod;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+/* Table */
+.table {
+    width: 900px;
+    height: 450px;
+    border-radius: 0 0 450px 450px;
+    background-color: rgb(18, 88, 18);
+    margin: auto;
+    margin-top: 50px;
+    border-top: 10px solid tan;
+    border-bottom: 50px solid brown;
+    border-left: 50px solid brown;
+    border-right: 50px solid brown;
+}
+
+.dealer {
+    position: absolute;
+    left: 45%;
+}
+
+.spots1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    margin: 0 30px;
+}
+
+.spots1 p {
+    font-size: x-large;
+    color: goldenrod;
+}
+
+.spots2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 130px;
+    margin-bottom: 20px;
+}
+
+.spots3 {
+    text-align: center;
+}
+
+.table img {
+    width: 75px;
+}
+
+/* Bottom Banner */
+.bot-banner {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+}

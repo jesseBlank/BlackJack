@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main -->
+    <div id="background">
+
+        <!-- Rules -->
+        <div id="rules">
+            <h1>Welcome to Blackjack!</h1>
+            <div class="main">
+                <div class="column">
+                    <h3>Rules</h3>
+                    <ul>
+                        <li>Get as close to 21 without going over.</li>
+                        <li>If you go over 21, you bust!</li>
+                        <li>Dealer must draw on 16 and stay on 17.</li>
+                        <li>If dealer goes over 21, player wins!</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>How to play?</h3>
+                    <ul>
+                        <li>Upon entry, press the "Shuffle!" button.</li>
+                        <li>Press the "Deal Cards!" button.</li>
+                        <li>If you would like to draw a card, press the "Hit!" button.</li>
+                        <li>If not, hit the "Stay!" button.</li>
+                        <li>Hit the "New Game!" button for the next hand.</li>
+                        <li>Don't forget to shuffle every couple hands!</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn2" onclick="hide(this)">Good luck!</button>
+        </div>
+
+        <!-- Top Banner -->
+        <div id="top">
+            <div class="scoreboard">
+                <h3>Score!</h3>
+                <ul>
+                    <li id="play">Player: </li>
+                    <li id="tie">Tie: </li>
+                    <li id="deal">Dealer: </li>
+                </ul>
+            </div>
+            <div class="top-banner">
+                <button class="btn" onclick="shuffleDeck()">Shuffle!</button>
+                <h1>Blackjack!</h1>
+                <button class="btn1" onclick="updateHTML()">Deal Cards!</button>
+                <button class="btn1" onclick="newGame()">New Game!</button>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table">
+            <div class="dealer"></div>
+            <div class="spots1">
+                <img src="goldCircle.png" alt="spot">
+                <p>Dealer must draw on 16 and stand on 17.</p>
+                <img src="goldCircle.png" alt="spot">
+            </div>
+            <div class="spots2">
+                <img src="goldCircle.png" alt="spot">
+                <img src="goldCircle.png" alt="spot">
+            </div>
+            <div class="spots3">
+                <img src="goldCircle.png" alt="spot">
+            </div>
+        </div>
+
+        <!-- Bottom Banner -->
+        <div class="bot-banner">
+            <button class="btn" onclick="drawCard(this)">Hit!</button>
+            <button class="btn" onclick="dealerDraw(this)">Stay!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
